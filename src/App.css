@@ -1,0 +1,281 @@
+
+*{
+  box-sizing: border-box;
+}
+
+ body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/**/
+h1,h2,h3,h4, p {
+  margin-top: 5px;
+  margin-bottom: 5px; 
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+  }
+
+/**/
+.app{
+  height: 100vh;
+  background-size: cover; 
+  background-position: center;
+  padding: 0rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700PX;
+  margin: auto;
+  } 
+/**/
+ .card {
+  background-color: rgba(222, 222, 222, 0.593);
+  height: 50%;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+ 
+  padding:.5rem;
+  width:80%;
+  margin: auto ;
+  display: flex;
+  flex-direction: column;
+ /* justify-content:space-between; */
+  align-content: center;
+  gap: 1rem;
+  max-width: 500PX;
+ }
+ /**/
+ .card__titles{
+  background-color: rgb(151, 240, 141); 
+  font-size: .5rem;
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+/*Titulo "Weather app" */
+.card__titles h1{
+ margin-top: 0;
+  color: rgb(215, 116, 11);
+  text-shadow: 2px 3px  5px rgb(0, 0, 0);
+  font-size:250%;
+  font-weight: 2px;
+}
+
+/*Titulo "Weather app" */
+.card__titles h2{
+ 
+  color: rgb(119, 14, 164);
+  text-shadow: 2px 2px  2PX  rgb(0, 0, 0);
+  font-size:200%;
+  font-weight: 2px;
+}
+  
+ /* Contenedor logo clima-Temperatura+ Info */
+.card__body {
+    height: 80%;
+    background-color: rgba(84, 80, 80, 0.607);
+    display: flex;
+    flex-direction: column;
+        
+  }
+
+   /* Contenedor logo clima-Temperatura*/
+
+  .card__body--icon-temp{
+    padding: .3rem 2rem;
+  background-color: aqua;
+  display: flex;
+  justify-content:space-between;
+
+}
+
+  /* Imagen sola logo clima */
+  .card__body--icon-temp img{
+    /* background-color: rgba(0, 0, 255, 0.439); */
+    max-width: 50px;
+    /* margin-top: 20px; */
+    
+
+  }
+
+  /* Titulo de la temperatura- Numeros*/
+  .card__body h2{
+   color: rgb(239, 140, 27);
+   font-size: 180%;
+   text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
+  }
+
+/**/
+  button{
+  font-size: 80%;
+  font-weight: bold;
+  color: red;
+  padding: 5px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  box-shadow: 2PX 2PX 3px rgba(0, 0, 0, 0.3);
+  border-bottom: none;
+ }
+
+
+ /* Estado del tiempo-Titulo info*/
+ ul h3{
+  color: rgb(236, 198, 83);
+  font-size: 100%;
+  text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
+ }
+
+ /* INFORMACION DEL CLIMA*/
+  .card__body-info {
+
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+ 
+  /**/
+  .card__body article ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+
+  }
+
+/**************************************************************/
+
+  /* justify-content: center;
+  align-items: center;
+  height: 100vh; */
+ 
+ 
+
+ /* .container{
+  background-color: blue;
+  padding: 2rem;
+ } */
+
+
+/* .card {
+  width: 30%;
+   background-color: #e34e4e;
+   border: 1px solid #cccccca4;
+   border-radius: 5px;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+   margin: 1rem auto;
+   max-width: 600px;
+   padding: 1rem;
+ } */
+
+
+
+/* 
+.card {
+ width: 30%;
+  background-color: #e34e4e;
+  border: 1px solid #cccccca4;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 1rem auto;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__body header {
+  display: flex;
+  justify-content: center;
+}
+
+.card__body header img {
+  max-width: 100px;
+}
+
+.card__body article {
+  margin-top: 20px;
+}
+
+.card__body article ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card__body article ul li {
+  margin-bottom: 10px;
+}
+
+.card__body article ul li span {
+  font-size: 14px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+footer button {
+  background-color: #0077ff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+} */
+
+
+/************************************************************************/
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
