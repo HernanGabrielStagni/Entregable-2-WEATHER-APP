@@ -36,7 +36,7 @@ h1,h2,h3,h4, p {
 .container{
   display: flex;
   flex-direction: column;
-  
+  padding: 1rem;
   justify-content: center;
   align-items: center;
   max-width: 700PX;
@@ -146,7 +146,7 @@ h1{
   .card__body h2{
     margin-top: 30px;
    color: rgb(241, 133, 10);
-   font-size: 190%;
+   font-size: 180%;
    text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
   }
 
@@ -168,7 +168,7 @@ h1{
  /* Estado del tiempo-Titulo debajo logo*/
  .card__body--icon-temp h3{
   color: rgba(241, 120, 27, 0.942);
-  font-size: 170%;
+  font-size: 150%;
   text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
   margin-bottom: 1rem;
  }
