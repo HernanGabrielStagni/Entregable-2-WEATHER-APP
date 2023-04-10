@@ -24,7 +24,7 @@ const handleChangeTemperature=()=>{
             <section className='card__body'>
                 <header className='card__body--icon-temp'>
                      <img src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`} alt="" />
-                      
+                       
                        <footer>
                             {isCelsius
                             ? <h2><span>{temperature?.celsius} C°</span></h2>
