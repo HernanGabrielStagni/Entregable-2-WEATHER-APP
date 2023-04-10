@@ -12,7 +12,7 @@ const handleChangeTemperature=()=>{
   return (
     <div className='container'>
      <h1> <span>W</span>EATHE<span>R</span></h1>
-     <h1> App </h1>
+     <h4> App </h4>
    
     <article className='card'>
        

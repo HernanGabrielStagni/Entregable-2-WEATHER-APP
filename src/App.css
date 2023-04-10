@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  height: 100vh;
 }
 
 /**/
@@ -63,6 +63,8 @@ h1,h2,h3,h4, p {
   align-items: center;
   max-width: 700PX;
   margin: auto;
+  height: 100vh;
+
 }
 
 
@@ -72,7 +74,7 @@ h1,h2,h3,h4, p {
 /**/
  .card {
   background-color: rgba(148, 145, 145, 0.702); 
-  height: 50%;
+  height: 70%;
   border: 1px solid var(--primary-color);
   border-radius: 5px;
   box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
@@ -90,11 +92,12 @@ h1,h2,h3,h4, p {
  }
  /**/
  .card__titles{
-  /* background-color: rgb(151, 240, 141);  */
+  /* background-color: rgb(151, 240, 141);   */
   font-size: .5rem;
   overflow: hidden;
   text-align: center;
-  /* padding: 1rem; */
+  margin-top: 0%;
+  padding: 1.5rem; 
 }
 
 
@@ -103,17 +106,27 @@ h1,h2,h3,h4, p {
   color: rgb(206, 135, 13);
 }
 /*Titulo " WEATHER app" */
-h1{
- margin-top: 0;
+.container h1,h4 {
+ margin-top: 5%;
   color: rgb(216, 107, 5);
   text-shadow: 2px 3px  5px rgb(0, 0, 0);
   font-size:200%;
   font-weight: 2px;
 }
 
+.container h4{
+  margin-top: 0%;
+  color: rgb(216, 107, 5);
+  text-shadow: 2px 3px  5px rgb(0, 0, 0);
+  font-size:150%;
+  font-weight: 2px;
+
+}
+
 /*Titulo "Localidad "Rio Cuarto" y pais" */
 .card__titles h2{
- margin-top: 5%;
+ 
+ margin-top: 0%;
   color: rgb(13, 13, 14);
   text-shadow: 1px 1px  3PX  rgb(0, 0, 0);
   font-size:280%;
@@ -213,6 +226,7 @@ h1{
     display: flex;
     justify-content: center;
    
+   
   }
   
  
@@ -222,6 +236,7 @@ h1{
     margin: 0;
     padding: 1rem;
     font-size: 120%;
+    
 
   }
 
