@@ -11,7 +11,8 @@ const handleChangeTemperature=()=>{
 
   return (
     <div className='container'>
-     <h1> * WEATHER * App </h1>
+     <h1> ** WEATHER **</h1>
+     <h1> App </h1>
    
     <article className='card'>
       

@@ -46,14 +46,14 @@ h1,h2,h3,h4, p {
 
   /**/
  .card {
-  background-color: rgba(222, 222, 222, 0.593);
+  background-color: rgba(181, 32, 32, 0.593);
   height: 50%;
   border: 1px solid var(--primary-color);
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
  
   padding:.5rem;
-  width:80%;
+  /* width:80%; */
   margin: auto ;
   margin-top: 2rem;
   display: flex;
@@ -86,7 +86,7 @@ h1{
  
   color: rgb(119, 14, 164);
   text-shadow: 1px 1px  3PX  rgb(0, 0, 0);
-  font-size:250%;
+  font-size:230%;
   font-weight: 2px;
 }
   
@@ -102,11 +102,11 @@ h1{
    /* Contenedor logo clima-Temperatura*/
 
   .card__body--icon-temp{
-    padding: .3rem 1rem;
+  padding: 0 1rem;
   background-color: aqua;
   display: flex;
   justify-content:space-between;
-  
+  gap: 1rem;
 
 
 }
@@ -114,6 +114,7 @@ h1{
 
   /* div logo + clima */
 .card__body--icon-temp div {
+  /* width: 50%; */
   background-color: blueviolet;
   display: flex;
   justify-content: center;
@@ -123,10 +124,19 @@ h1{
 }
 
 
+  /* contenedor temperatura + boton */
+.card__body--icon-temp footer{
+  padding: 1rem;
+  background-color: rgb(16, 165, 46);
+
+
+}
+
+
   /* Imagen sola logo clima */
   .card__body--icon-temp img{
     /* background-color: rgba(0, 0, 255, 0.439); */
-    max-width: 50px;
+    max-width: 80px;
     /* margin-top: 20px; */
     
 
@@ -141,7 +151,8 @@ h1{
 
 /*Propiedades del boton*/
   button{
-  font-size: 80%;
+    width: 100px;
+  font-size: 70%;
   font-weight: bold;
   color: red;
   padding: 5px;
@@ -149,6 +160,7 @@ h1{
   border-radius: 5px;   
   box-shadow: 2PX 2PX 3px rgba(0, 0, 0, 0.3);
   border-bottom: none;
+  margin-top: 10px;
  }
 
 
@@ -157,6 +169,7 @@ h1{
   color: rgb(240, 163, 10);
   font-size: 100%;
   text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
+  margin-bottom: 1rem;
  }
 
  /* INFORMACION DEL CLIMA*/
@@ -174,7 +187,7 @@ h1{
     list-style: none;
     margin: 0;
     padding: 1rem;
-    font-size: 90%;
+    font-size: 110%;
 
   }
 
