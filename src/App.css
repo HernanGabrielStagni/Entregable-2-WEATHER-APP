@@ -30,7 +30,17 @@ h1,h2,h3,h4, p {
   max-width: 700PX;
   margin: auto;
   } 
+
+
 /**/
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+
+  /**/
  .card {
   background-color: rgba(222, 222, 222, 0.593);
   height: 50%;
@@ -58,9 +68,9 @@ h1,h2,h3,h4, p {
 }
 
 /*Titulo "Weather app" */
-.card__titles h1{
+h1{
  margin-top: 0;
-  color: rgb(215, 116, 11);
+  color: rgb(138, 14, 157);
   text-shadow: 2px 3px  5px rgb(0, 0, 0);
   font-size:250%;
   font-weight: 2px;
@@ -117,7 +127,7 @@ h1,h2,h3,h4, p {
   color: red;
   padding: 5px;
   border: 1px solid var(--primary-color);
-  border-radius: 5px;
+  border-radius: 5px;   
   box-shadow: 2PX 2PX 3px rgba(0, 0, 0, 0.3);
   border-bottom: none;
  }
