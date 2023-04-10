@@ -101,9 +101,11 @@ h1,h2,h3,h4, p {
 }
 
 
+
 .container h1 span{
   font-size: 130%;
   color: rgb(206, 135, 13);
+
 }
 /*Titulo " WEATHER app" */
 .container h1,h4 {
