@@ -36,7 +36,11 @@ h1,h2,h3,h4, p {
 .container{
   display: flex;
   flex-direction: column;
-  padding: 5rem;
+  padding: rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 700PX;
+  margin: auto;
 }
 
 
@@ -51,6 +55,7 @@ h1,h2,h3,h4, p {
   padding:.5rem;
   width:80%;
   margin: auto ;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
  /* justify-content:space-between; */
@@ -70,25 +75,25 @@ h1,h2,h3,h4, p {
 /*Titulo "Weather app" */
 h1{
  margin-top: 0;
-  color: rgb(138, 14, 157);
+  color: rgb(216, 107, 5);
   text-shadow: 2px 3px  5px rgb(0, 0, 0);
   font-size:250%;
   font-weight: 2px;
 }
 
-/*Titulo "Weather app" */
+/*Titulo "Localidad "Rio Cuarto" y pais" */
 .card__titles h2{
  
   color: rgb(119, 14, 164);
-  text-shadow: 2px 2px  2PX  rgb(0, 0, 0);
-  font-size:200%;
+  text-shadow: 1px 1px  3PX  rgb(0, 0, 0);
+  font-size:250%;
   font-weight: 2px;
 }
   
  /* Contenedor logo clima-Temperatura+ Info */
 .card__body {
-    height: 80%;
-    background-color: rgba(84, 80, 80, 0.607);
+    /* height: 100%; */
+    background-color: rgba(163, 71, 71, 0.607);
     display: flex;
     flex-direction: column;
         
@@ -97,12 +102,26 @@ h1{
    /* Contenedor logo clima-Temperatura*/
 
   .card__body--icon-temp{
-    padding: .3rem 2rem;
+    padding: .3rem 1rem;
   background-color: aqua;
   display: flex;
   justify-content:space-between;
+  
+
 
 }
+
+
+  /* div logo + clima */
+.card__body--icon-temp div {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
 
   /* Imagen sola logo clima */
   .card__body--icon-temp img{
@@ -120,7 +139,7 @@ h1{
    text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
   }
 
-/**/
+/*Propiedades del boton*/
   button{
   font-size: 80%;
   font-weight: bold;
@@ -133,15 +152,16 @@ h1{
  }
 
 
- /* Estado del tiempo-Titulo info*/
- ul h3{
-  color: rgb(236, 198, 83);
+ /* Estado del tiempo-Titulo debajo logo*/
+ .card__body--icon-temp h3{
+  color: rgb(240, 163, 10);
   font-size: 100%;
   text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
  }
 
  /* INFORMACION DEL CLIMA*/
   .card__body-info {
+   background-color: red;
 
     display: flex;
     justify-content: center;
@@ -153,139 +173,9 @@ h1{
   .card__body article ul {
     list-style: none;
     margin: 0;
-    padding: 0;
-    font-size: 100%;
+    padding: 1rem;
+    font-size: 90%;
 
   }
 
 /**************************************************************/
-
-  /* justify-content: center;
-  align-items: center;
-  height: 100vh; */
- 
- 
-
- /* .container{
-  background-color: blue;
-  padding: 2rem;
- } */
-
-
-/* .card {
-  width: 30%;
-   background-color: #e34e4e;
-   border: 1px solid #cccccca4;
-   border-radius: 5px;
-   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-   margin: 1rem auto;
-   max-width: 600px;
-   padding: 1rem;
- } */
-
-
-
-/* 
-.card {
- width: 30%;
-  background-color: #e34e4e;
-  border: 1px solid #cccccca4;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  margin: 1rem auto;
-  max-width: 600px;
-  padding: 1rem;
-}
-
-.card__body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.card__body header {
-  display: flex;
-  justify-content: center;
-}
-
-.card__body header img {
-  max-width: 100px;
-}
-
-.card__body article {
-  margin-top: 20px;
-}
-
-.card__body article ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.card__body article ul li {
-  margin-bottom: 10px;
-}
-
-.card__body article ul li span {
-  font-size: 14px;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-footer button {
-  background-color: #0077ff;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-} */
-
-
-/************************************************************************/
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
