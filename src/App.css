@@ -135,9 +135,10 @@ h1{
 
   /* Imagen sola logo clima */
   .card__body--icon-temp img{
-    background-color: rgba(0, 0, 255, 0.439); 
+    /* background-color: rgba(0, 0, 255, 0.439);  */
     /* max-width: 100px;
     /* margin-top: 20px; */
+    width: 60%;
    
 
     
@@ -155,7 +156,7 @@ h1{
 /*Propiedades del boton*/
   button{
     width: 90px;
-  font-size: 70%;
+  font-size: 75%;
   font-weight: bold;
   color: rgb(213, 43, 43);
   padding: 5px;
