@@ -86,7 +86,7 @@ h1{
  
   color: rgb(119, 14, 164);
   text-shadow: 1px 1px  3PX  rgb(0, 0, 0);
-  font-size:230%;
+  font-size:250%;
   font-weight: 2px;
 }
   
@@ -103,7 +103,7 @@ h1{
 
   .card__body--icon-temp{
   padding: 0 1rem;
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
   justify-content:space-between;
   gap: 1rem;
@@ -115,7 +115,7 @@ h1{
   /* div logo + clima */
 .card__body--icon-temp div {
   /* width: 50%; */
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,7 +127,7 @@ h1{
   /* contenedor temperatura + boton */
 .card__body--icon-temp footer{
   padding: 1rem;
-  background-color: rgb(16, 165, 46);
+  /* background-color: rgb(16, 165, 46); */
 
 
 }
@@ -136,7 +136,7 @@ h1{
   /* Imagen sola logo clima */
   .card__body--icon-temp img{
     /* background-color: rgba(0, 0, 255, 0.439); */
-    max-width: 80px;
+    max-width: 100px;
     /* margin-top: 20px; */
     
 
@@ -144,7 +144,8 @@ h1{
 
   /* Titulo de la temperatura- Numeros*/
   .card__body h2{
-   color: rgb(239, 140, 27);
+    margin-top: 10px;
+   color: rgb(241, 133, 10);
    font-size: 180%;
    text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
   }
@@ -154,27 +155,27 @@ h1{
     width: 100px;
   font-size: 70%;
   font-weight: bold;
-  color: red;
+  color: rgb(213, 43, 43);
   padding: 5px;
   border: 1px solid var(--primary-color);
   border-radius: 5px;   
   box-shadow: 2PX 2PX 3px rgba(0, 0, 0, 0.3);
   border-bottom: none;
-  margin-top: 10px;
+  margin-top: 15px;
  }
 
 
  /* Estado del tiempo-Titulo debajo logo*/
  .card__body--icon-temp h3{
-  color: rgb(240, 163, 10);
-  font-size: 100%;
+  color: rgba(241, 120, 27, 0.942);
+  font-size: 170%;
   text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
   margin-bottom: 1rem;
  }
 
  /* INFORMACION DEL CLIMA*/
   .card__body-info {
-   background-color: red;
+   /* background-color: red; */
 
     display: flex;
     justify-content: center;
@@ -182,12 +183,18 @@ h1{
   }
   
  
-  /**/
+  /*parametros infodel tiempo*/
   .card__body article ul {
     list-style: none;
     margin: 0;
     padding: 1rem;
-    font-size: 110%;
+    font-size: 130%;
+
+  }
+
+  .card__body article span{
+  /* font-weight: 1x; */
+  text-shadow: 1PX 1PX 1px rgb(0, 0, 0);
 
   }
 
