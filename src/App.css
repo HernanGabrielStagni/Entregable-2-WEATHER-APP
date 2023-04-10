@@ -7,13 +7,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1024; 
+
 }
 
 /**/
 h1,h2,h3,h4, p {
-  margin-top: 5px;
-  margin-bottom: 5px; 
+  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 0px; 
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 
   }
@@ -30,6 +31,7 @@ h1,h2,h3,h4, p {
   align-items: center;
   max-width: 700PX;
   margin: auto;
+  max-width: 1024; 
   } 
 
 
@@ -64,9 +66,12 @@ h1,h2,h3,h4, p {
 }
 
 
-  /**/
+
+ 
+
+/**/
  .card {
-  background-color: rgba(219, 210, 210, 0.609); 
+  background-color: rgba(148, 145, 145, 0.702); 
   height: 50%;
   border: 1px solid var(--primary-color);
   border-radius: 5px;
@@ -92,7 +97,12 @@ h1,h2,h3,h4, p {
   /* padding: 1rem; */
 }
 
-/*Titulo "Weather app" */
+
+.container h1 span{
+  font-size: 130%;
+  color: rgb(206, 135, 13);
+}
+/*Titulo " WEATHER app" */
 h1{
  margin-top: 0;
   color: rgb(216, 107, 5);
@@ -103,7 +113,7 @@ h1{
 
 /*Titulo "Localidad "Rio Cuarto" y pais" */
 .card__titles h2{
- margin-top: 10%;
+ margin-top: 5%;
   color: rgb(13, 13, 14);
   text-shadow: 1px 1px  3PX  rgb(0, 0, 0);
   font-size:280%;
@@ -165,10 +175,10 @@ h1{
 
   }
 
-  /* Titulo de la temperatura- Numeros*/
+  /* Titulo de la temperatura 24.8 °C- Numeros*/
   .card__body h2{
     margin-top: 30px;
-   color: rgb(241, 133, 10);
+   color: rgb(219, 110, 43);
    font-size: 180%;
    text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
   }
@@ -178,7 +188,7 @@ h1{
     width: 90px;
   font-size: 75%;
   font-weight: bold;
-  color: rgb(213, 43, 43);
+  color: rgb(252, 31, 31);
   padding: 5px;
   border: 1px solid var(--primary-color);
   border-radius: 5px;   
@@ -235,6 +245,7 @@ h1{
      
       gap: .5rem;
       justify-content: center ;
+      max-width: 1024; 
       
   }
 
@@ -246,22 +257,15 @@ h1{
     max-width: 1024PX;
     margin: auto;
   }
-  
+ 
   
     /**/
    .card {
-    background-color: rgba(197, 191, 191, 0.609); 
-    height: 70%;
-  
-   
+    background-color: rgba(144, 141, 141, 0.609); 
     padding:.5rem;
     /* width:80%; */
     margin: auto ;
     margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-   /* justify-content:space-between; */
-    align-content: center;
     gap: 1rem;
     max-width: 500PX;
    }
@@ -270,7 +274,7 @@ h1{
  .card__body h2{
   margin-top: 30px;
  color: rgb(241, 133, 10);
- font-size: 450%;
+ font-size: 250%;
  text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
 }
 

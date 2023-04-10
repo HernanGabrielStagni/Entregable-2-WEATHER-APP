@@ -11,7 +11,7 @@ const handleChangeTemperature=()=>{
 
   return (
     <div className='container'>
-     <h1> ** WEATHER **</h1>
+     <h1> <span>W</span>EATHE<span>R</span></h1>
      <h1> App </h1>
    
     <article className='card'>
@@ -34,7 +34,7 @@ const handleChangeTemperature=()=>{
                       </div>
                        <footer>
                             {isCelsius
-                            ? <h2><span>{temperature?.celsius} C°</span></h2>
+                            ? <h2><span>{temperature?.celsius} °C</span></h2>
                             : <h2><span>{temperature?.fahrenheit} °F</span></h2>
                             }
                             
