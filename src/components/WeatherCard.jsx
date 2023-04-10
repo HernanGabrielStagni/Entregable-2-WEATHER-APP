@@ -26,8 +26,10 @@ const handleChangeTemperature=()=>{
             
             <section className='card__body'>
                 <header className='card__body--icon-temp'>
-                     <img src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`} alt="" />
-                       
+                      <div>
+                          <img src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`} alt="" />
+                          {<h3>{weather?.weather[0].description}</h3>}
+                      </div>
                        <footer>
                             {isCelsius
                             ? <h2><span>{temperature?.celsius} C°</span></h2>
@@ -42,7 +44,7 @@ const handleChangeTemperature=()=>{
                      
                     
                     <ul>
-                          {<h3> * Soleado * {weather?.weather.description}</h3>}
+                        
                             <li><span>Nubocidad: {weather?.clouds.all} %</span></li>
                             <li><span>Vel./viento: {weather?.wind.speed} m/s </span></li>
                             {/* <li><span>Direc./viento: {weather?.wind.deg}°</span></li> */}
