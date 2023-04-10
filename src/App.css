@@ -6,8 +6,8 @@
  body{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  height: 100vh;
+ 
+
 }
 
 /**/
@@ -31,7 +31,7 @@ h1,h2,h3,h4, p {
   align-items: center;
   max-width: 700PX;
   margin: auto;
-  max-width: 1024; 
+  box-sizing: border-box;
   } 
 
 
@@ -63,7 +63,7 @@ h1,h2,h3,h4, p {
   align-items: center;
   max-width: 700PX;
   margin: auto;
-  height: 100vh;
+  height: 90vh;
 
 }
 
@@ -97,7 +97,7 @@ h1,h2,h3,h4, p {
   overflow: hidden;
   text-align: center;
   margin-top: 0%;
-  padding: 1.5rem; 
+  padding: 1.rem; 
 }
 
 

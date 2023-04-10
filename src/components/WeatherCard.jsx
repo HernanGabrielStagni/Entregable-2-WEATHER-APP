@@ -51,7 +51,7 @@ const handleChangeTemperature=()=>{
                             <li>Wind speed: <span>{weather?.wind.speed} m/s </span></li>
                             {/* <li><span>Direc./viento: {weather?.wind.deg}°</span></li> */}
                             {/* <li><span>Sens. Termica:{weather?.main.feels_like} °K</span></li> */}
-                            <li>Humicity:<span>{weather?.main.humidity} %</span></li>
+                            <li>Humidity:<span>{weather?.main.humidity} %</span></li>
                             <li><span>------------</span></li>
                             <li>Visibility: <span>{weather?.visibility} mts.</span></li>
                             <li>Pressure: <span>{weather?.main.pressure} hPa </span></li> 
