@@ -12,12 +12,19 @@ function App() {
   const [weather, setWeather] = useState()
   const [temperature, setTemperature] = useState()
   const [imgBack, setImgBack] = useState()
-
+const [hasError, setHasError] = useState(false)
 
   useEffect(() => {
-    const error= (err) =>{console.log(err)}
+    const error= (err) =>{
+      console.log(err)
+      setHasError(true)
+      setTimeout(() => {
+          setHasError(false)
+        }, 5000)
+      }
     
-    const success= (pos) =>{ 
+    
+      const success= (pos) =>{ 
       const obj={
         lat: pos.coords.latitude,
         lon: pos.coords.longitude
@@ -57,6 +64,9 @@ console.log(weather)
 
   return (
     <div style={appStyles} className="app">
+      {
+        hasError && <p>❌ This pokemon not found</p>
+      }
      { weather
          ?
         <WeatherCard 

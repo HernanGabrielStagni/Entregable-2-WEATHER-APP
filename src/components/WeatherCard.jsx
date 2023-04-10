@@ -47,14 +47,14 @@ const handleChangeTemperature=()=>{
                     
                     <ul>
                         
-                            <li>Nubocidad: <span>{weather?.clouds.all} %</span></li>
-                            <li>Vel./viento: <span>{weather?.wind.speed} m/s </span></li>
+                            <li>Clouds: <span>{weather?.clouds.all} %</span></li>
+                            <li>Wind speed: <span>{weather?.wind.speed} m/s </span></li>
                             {/* <li><span>Direc./viento: {weather?.wind.deg}°</span></li> */}
                             {/* <li><span>Sens. Termica:{weather?.main.feels_like} °K</span></li> */}
-                            <li>Humedad:<span>{weather?.main.humidity} %</span></li>
-                            <li><span>-------------</span></li>
-                            <li>Visibilidad: <span>{weather?.visibility} mts.</span></li>
-                            <li>Presion: <span>{weather?.main.pressure} hPa </span></li> 
+                            <li>Humicity:<span>{weather?.main.humidity} %</span></li>
+                            <li><span>------------</span></li>
+                            <li>Visibility: <span>{weather?.visibility} mts.</span></li>
+                            <li>Pressure: <span>{weather?.main.pressure} hPa </span></li> 
                     </ul>
                 
                 </article>

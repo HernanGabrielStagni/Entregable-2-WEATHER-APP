@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 1024; 
 }
 
 /**/
@@ -45,7 +46,7 @@ h1,h2,h3,h4, p {
   color: aliceblue;
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 250px;
   box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
   justify-content: center;
   align-items: center;
@@ -221,3 +222,71 @@ h1{
   }
 
 /**************************************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+/********************************************/
+@media (min-width: 700px)  {
+   
+   
+  .App{
+     
+      gap: .5rem;
+      justify-content: center ;
+      
+  }
+
+  .container{
+   
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024PX;
+    margin: auto;
+  }
+  
+  
+    /**/
+   .card {
+    background-color: rgba(197, 191, 191, 0.609); 
+    height: 70%;
+  
+   
+    padding:.5rem;
+    /* width:80%; */
+    margin: auto ;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+   /* justify-content:space-between; */
+    align-content: center;
+    gap: 1rem;
+    max-width: 500PX;
+   }
+
+ /* Titulo de la temperatura- Numeros*/
+ .card__body h2{
+  margin-top: 30px;
+ color: rgb(241, 133, 10);
+ font-size: 450%;
+ text-shadow: 2PX 2PX 3px rgb(0, 0, 0);
+}
+
+/*Propiedades del boton*/
+button{
+  width: 150px;
+font-size: 75%;
+font-weight: bold;
+color: rgb(213, 43, 43);
+padding: 5px;
+border: 1px solid var(--primary-color);
+border-radius: 5px;   
+box-shadow: 2PX 2PX 3px rgba(0, 0, 0, 0.3);
+border-bottom: none;
+margin-top: 25px;
+}
+
+
+}
