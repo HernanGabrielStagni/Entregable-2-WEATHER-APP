@@ -28,7 +28,9 @@ const handleChangeTemperature=()=>{
             <section className='card__body'>
                 <header className='card__body--icon-temp'>
                       <div>
-                          <img src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`} alt="" />
+                      {<img src="/icons/animated/01d.svg" alt="" /> ||
+                          <img src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`} alt="" />}
+                         
                           {<h3>{weather?.weather[0].description}</h3>}
                       </div>
                        <footer>
