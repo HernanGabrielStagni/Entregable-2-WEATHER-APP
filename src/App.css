@@ -106,7 +106,7 @@ h1{
   /* background-color: aqua; */
   display: flex;
   justify-content:space-between;
-  gap: 1rem;
+  gap: 1rem 0;
 
 
 }
