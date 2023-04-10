@@ -74,7 +74,7 @@ h1,h2,h3,h4, p {
 /**/
  .card {
   background-color: rgba(148, 145, 145, 0.702); 
-  height: 70%;
+  height: 80%;
   border: 1px solid var(--primary-color);
   border-radius: 5px;
   box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.3);
@@ -283,6 +283,7 @@ h1,h2,h3,h4, p {
     margin-top: 1rem;
     gap: 1rem;
     max-width: 500PX;
+    max-height: 500px;
    }
 
  /* Titulo de la temperatura- Numeros*/
