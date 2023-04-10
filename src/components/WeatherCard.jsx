@@ -7,7 +7,7 @@ const [isCelsius, setIsCelsius] = useState(true)
 const handleChangeTemperature=()=>{
     setIsCelsius(!isCelsius)
   }
-
+  const ulr1="/icons/animated/01d.svg"
 
   return (
     <div className='container'>
@@ -23,13 +23,13 @@ const handleChangeTemperature=()=>{
                 <h2>{weather?.name} |  {weather?.sys.country}  </h2>
             </header>
                 
-            
+          
             
             <section className='card__body'>
                 <header className='card__body--icon-temp'>
                       <div>
-                      {<img src="/icons/animated/01d.svg" alt="" /> ||
-                          <img src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`} alt="" />}
+                      <img src="/icons/animated/01n.svg" alt="" /> ||
+                          <img src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`} alt="" />
                          
                           {<h3>{weather?.weather[0].description}</h3>}
                       </div>
